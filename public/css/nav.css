@@ -1,0 +1,107 @@
+nav .wrapper-nav{
+    padding: 0 30px;
+    margin: auto;
+}
+
+
+.nav-links li{
+    font-size: 24px;
+    font-weight: 400;
+}
+
+nav{
+    position: relative;
+    width: 100%;
+    height: 65px;
+    line-height: 65px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.nav-links li{
+    list-style: none;
+}
+
+.wrapper-nav .nav-links{
+    display: inline-flex;
+}
+
+
+.nav-links .drop-menu{
+    width: 180px;
+    top: 88px;
+    line-height: 45px;
+    position: absolute;
+    opacity: 0;
+    visibility: 0;
+    z-index: 999;
+    background: white;
+    border-radius: 5px;
+}
+
+.nav-links li:hover .drop-menu{
+    top: 67px;
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.3s ease;
+}
+
+.drop-menu li a{
+    width: 100%;
+    display: block;
+    padding: 0 0 0 15px;
+    font-weight: 400;
+}
+
+.mega-box{
+    position: absolute;
+    top: 88px;
+    width: 100%;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 999;
+}
+
+.nav-links li:hover .mega-box{
+    top: 67px;
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.3s ease;
+}
+
+.mega-box .content{
+    padding: 25px 20px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    background: white;
+    border-radius: 5px;
+}
+
+.content .row{
+    width: calc(25% - 30px);
+    line-height: 45px;
+}
+
+.content .row .mega-links{
+    border-left: 1px solid #000000;
+    margin-left: -40px;
+}
+
+.content .row:nth-child(1),
+.content .row:nth-child(2){
+    border-left: 0px;
+}
+
+
+.row .mega-links li{
+    padding: 0 20px;
+}
+
+.row .mega-links li a{
+    padding: 0 20px;
+    font-size: 20px;
+    display: block;
+}
